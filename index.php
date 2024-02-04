@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Tailwind CSS Link -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
 <body>
@@ -112,9 +113,9 @@
       <img class="absolute top-0 -z-10 h-full w-full object-cover blur-sm" src="assets\images\rowing.webp"
         alt="rowing hero image">
     </section>
-    <section class="max-w-6xl mx-auto py-16 ">
+    <section class="max-w-6xl mx-auto py-16 px-5 md:px-0">
       <h2 class='text-4xl mb-4 font-bold'>Ultimas noticias</h2>
-      <div class='flex'>
+      <div class='flex flex-col md:flex-row'>
         <?php include 'noticia.php'; ?>
         <?php include 'noticia.php'; ?>
         <?php include 'noticia.php'; ?>
