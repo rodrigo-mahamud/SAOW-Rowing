@@ -22,7 +22,7 @@
                         <path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" />
                         <path d="M16 5l3 3" />
                     </svg>
-                    Edit
+                    Editar
                 </button>
                 <button href="#" type="button"
                     class="flex w-2/5 ml-1 items-center ease-in-out duration-300 justify-center px-3 py-3 text-sm font-medium text-center text-white rounded-lg bg-red-600 hover:bg-red-700">
@@ -36,7 +36,7 @@
                         <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
                         <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
                     </svg>
-                    Delete
+                    Borrar
                 </button>
             </div>
         </div>

@@ -25,8 +25,8 @@
   <main>
     <section class="bg-[#111827cc] relative h-[60vh] mb-10">
       <?php
-      $title = 'We invest in the world’s potential';
-      $subtitle = 'Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.';
+      $title = 'Zeidler, y un premio de World Rowing';
+      $subtitle = 'No cabe duda del talento fenomenal de Olli Zeidler de Alemania y acaba de añadir otra cuerda a su arco al ser nombrado el Equipo Masculino del Año 2023 por World Rowing.';
       $imgSrc = 'assets/images/rowing.webp';
       $imgAlt = 'rowing hero image';
       include 'components/header.php';
@@ -42,8 +42,8 @@
       $textoBoton = "Añadir Noticia";
       $noticias = [
         ['imgSrc' => './assets/images/image-1.jpg', 'imgAlt' => 'Imagen de noticia 1', 'title' => '2024 World Rowing Cup I', 'body' => 'The 2024 World Rowing Cup I will be hosted 12-14 April in Varese, Italy. This will be the first event of the 2024 World Cup Series.The World Rowing Cups are an annual series of three regattas that act as a lead-up to the World Rowing Championships. World Rowing Cups are held over three days with a progression system from heats through to finals. Racing at the World'],
-        ['imgSrc' => './assets/images/image-1.jpg', 'imgAlt' => 'Imagen de noticia 2', 'title' => '2024 World Rowing Cup II', 'body' => 'The World Rowing Cup is an annual series of three regattas that act as a lead-up to the World Rowing Championships. World Rowing Cups are held over three days with a progression system from heats through to finals. Racing at the World Rowing Cup includes the 14 Olympic boat classes and a selection of International boat classes. Para-rowing is contested at some '],
-        ['imgSrc' => './assets/images/image-1.jpg', 'imgAlt' => 'Imagen de noticia 3', 'title' => '2024 World Rowing Cup III', 'body' => 'The 2024 World Rowing Cup III will be hosted 14-16 June in Poznan, Poland. This will be the third and last event of the 2024 World Cup Series. The World Rowing Cups are an annual series of three regattas that act as a lead-up to the World Rowing Championships. World Rowing Cups are held over three days with a progression system from heats through to finals.'],
+        ['imgSrc' => './assets/images/image-2.jpg', 'imgAlt' => 'Imagen de noticia 2', 'title' => '2024 World Rowing Cup II', 'body' => 'The World Rowing Cup is an annual series of three regattas that act as a lead-up to the World Rowing Championships. World Rowing Cups are held over three days with a progression system from heats through to finals. Racing at the World Rowing Cup includes the 14 Olympic boat classes and a selection of International boat classes. Para-rowing is contested at some '],
+        ['imgSrc' => './assets/images/image-3.jpg', 'imgAlt' => 'Imagen de noticia 3', 'title' => '2024 World Rowing Cup III', 'body' => 'The 2024 World Rowing Cup III will be hosted 14-16 June in Poznan, Poland. This will be the third and last event of the 2024 World Cup Series. The World Rowing Cups are an annual series of three regattas that act as a lead-up to the World Rowing Championships. World Rowing Cups are held over three days with a progression system from heats through to finals.'],
       ];
       include 'components/cardsWrapper.php';
       ?>
