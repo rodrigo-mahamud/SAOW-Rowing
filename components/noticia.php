@@ -3,7 +3,7 @@
 
     <div class="max-w-sm bg-white rounded-lg shadow-lg ">
         <a href="#">
-            <img class="rounded-t-lg" src="./assets/images/image-1.jpg" alt="" />
+            <img class="rounded-t-lg" loading="lazy" src="./assets/images/image-1.jpg" alt="" />
         </a>
         <div class="p-5">
             <a href="#">
