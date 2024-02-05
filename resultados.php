@@ -27,14 +27,25 @@
             <?php
             $title = 'Resultados Torneo 2023';
             $subtitle = 'Descubre los resultados del torneo anterior';
-            $imgSrc = 'assets/images/rowing.webp';
+            $imgSrc = 'assets/images/results.jpg';
             $imgAlt = 'rowing hero image';
             include 'components/header.php';
             ?>
         </section>
 
         <section class="max-w-6xl mx-auto py-20 px-5 md:px-0">
-            <?php include 'components/noticia.php'; ?>
+            <?php
+            $titulo = "Lista de resultados";
+            $subtitulo = "Descubre las últimas novedades del campeonato de remo";
+            $textoBoton = "Añadir Noticia";
+            $noticias = [
+                ['imgSrc' => './assets/images/winner.jpg', 'imgAlt' => 'Imagen de noticia 1', 'title' => 'Nombre de ganador I', 'body' => 'Ganador de la primera edición'],
+                ['imgSrc' => './assets/images/winner.jpg', 'imgAlt' => 'Imagen de noticia 2', 'title' => 'Nombre de ganador II', 'body' => 'Ganador de la primera edición'],
+                ['imgSrc' => './assets/images/winner.jpg', 'imgAlt' => 'Imagen de noticia 3', 'title' => 'Nombre de ganador III', 'body' => 'Ganador de la primera edición'],
+            ];
+            include 'components/cardsWrapper.php';
+            ?>
+
         </section>
         <!-- Otros componentes o secciones -->
     </main>

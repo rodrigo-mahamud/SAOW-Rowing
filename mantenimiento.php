@@ -21,7 +21,7 @@
 
     <!-- Contenido Principal -->
     <main>
-        <section class="max-w-6xl mx-auto py-20 px-5 md:px-0">
+        <section class="bg-gray-50 ">
             <?php include 'components/login.php'; ?>
         </section>
     </main>
