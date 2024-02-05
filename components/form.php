@@ -1,6 +1,6 @@
 <div class="bg-white">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">Contáctanos</h2>
+        <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">Contáctanos</h1>
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-xl">¿Tienes un problema técnico? ¿Quieres
             enviar comentarios sobre una función beta? ¿Necesitas detalles sobre nuestro plan de Negocios? Háznoslo
             saber.</p>

@@ -3,9 +3,9 @@
         <img class="rounded-t-lg" loading="lazy" src="<?php echo htmlspecialchars($noticia['imgSrc']); ?>"
             alt="<?php echo htmlspecialchars($noticia['imgAlt']); ?>" />
         <div class="p-6">
-            <h5 class="text-2xl font-bold tracking-tight text-gray-800">
+            <h4 class="text-2xl font-bold tracking-tight text-gray-800">
                 <?php echo htmlspecialchars($noticia['title']); ?>
-            </h5>
+            </h4>
             <div class="max-h-24 overflow-hidden my-5">
                 <p class="line-clamp-4">
                     <?php echo htmlspecialchars($noticia['body']); ?>
