@@ -13,34 +13,23 @@
 </head>
 
 <body>
-
     <!-- Navegación -->
     <header
         class="bg-white dark:bg-gray-900 sticky top-0 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <?php include 'components/navMenu.php'; ?>
     </header>
 
-
     <!-- Contenido Principal -->
     <main>
-        <section class="bg-[#111827cc] relative h-[60vh] mb-10">
-            <?php
-            $title = 'Resultados Torneo 2023';
-            $subtitle = 'Descubre los resultados del torneo anterior';
-            $imgSrc = 'assets/images/rowing.webp';
-            $imgAlt = 'rowing hero image';
-            include 'components/header.php';
-            ?>
-        </section>
-
         <section class="max-w-6xl mx-auto py-20 px-5 md:px-0">
-            <?php include 'components/noticia.php'; ?>
+            <?php include 'components/form.php'; ?>
         </section>
-        <!-- Otros componentes o secciones -->
     </main>
 
     <!-- Footer -->
     <?php include 'components/footer.php'; ?>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
     <script>
