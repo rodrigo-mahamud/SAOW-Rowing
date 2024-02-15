@@ -1,3 +1,6 @@
+<?php
+include 'db.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -38,12 +41,27 @@
             $titulo = "Lista de resultados";
             $subtitulo = "Descubre las últimas novedades del campeonato de remo";
             $textoBoton = "Añadir Noticia";
-            $noticias = [
-                ['imgSrc' => './assets/images/winner.jpg', 'imgAlt' => 'Imagen de noticia 1', 'title' => 'Nombre de ganador I', 'body' => 'Ganador de la primera edición'],
-                ['imgSrc' => './assets/images/winner.jpg', 'imgAlt' => 'Imagen de noticia 2', 'title' => 'Nombre de ganador II', 'body' => 'Ganador de la primera edición'],
-                ['imgSrc' => './assets/images/winner.jpg', 'imgAlt' => 'Imagen de noticia 3', 'title' => 'Nombre de ganador III', 'body' => 'Ganador de la primera edición'],
-            ];
-            include 'components/cardsWrapper.php';
+            $noticias = array();
+
+            try {
+                $sql = "SELECT * FROM competicion";
+                $stmt = $pdo->query($sql);
+                $competiciones = $stmt->fetchAll();
+            } catch (\PDOException $e) {
+                throw new \PDOException($e->getMessage(), (int) $e->getCode());
+            }
+
+            // Suponiendo que este es el formato que esperan tus componentes
+            $noticias = array_map(function ($competicion) {
+                return [
+                    'imgSrc' => './assets/images/winner.jpg', // Imagen genérica si no tienes una en la DB
+                    'imgAlt' => 'Imagen de competición', // O un valor específico de la competición
+                    'title' => $competicion['Nombre'], // Asume que tienes una columna 'Nombre'
+                    'body' => "Fecha: " . $competicion['Fecha'] . " - Ubicación: " . $competicion['Ubicación'], // Ejemplo de cuerpo
+                ];
+            }, $competiciones);
+
+            include 'components/cardsWrapper.php'; // Incluye tu componente hijo aquí
             ?>
 
         </section>
